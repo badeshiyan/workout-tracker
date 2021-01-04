@@ -41,27 +41,31 @@ app.get("/api/workouts", (req, res) => {
   });
 });
 
-app.put("/markread/:id", ({ params }, res) => {
-  db.books.update(
+app.get("/api/workouts/range", (req, res) => {
+  Workout.aggregate([
     {
-      _id: mongojs.ObjectId(params.id),
-    },
-    {
-      $set: {
-        read: true,
+      $addFields: {
+        totalDuration: {
+          $sum: "$exercises.duration",
+        },
       },
     },
+  ])
+    .sort({ _id: -1 })
+    .limit(7)
+    .then(function (allWorkouts) {
+      res.json(allWorkouts);
+    });
+});
 
-    (error, edited) => {
-      if (error) {
-        console.log(error);
-        res.send(error);
-      } else {
-        console.log(edited);
-        res.send(edited);
-      }
-    }
-  );
+app.put("/api/workouts/:id", ({ body, params }, res) => {
+  Workout.findByIdAndUpdate(
+    params.id,
+    { $push: { exercises: body } },
+    { new: true, runValidators: true }
+  ).then(function (allWorkouts) {
+    res.json(allWorkouts);
+  });
 });
 
 app.listen(3000, () => {
