@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const logger = require("morgan");
 const Workout = require("./models/workout");
 const path = require("path");
+var PORT = process.env.PORT || 3000;
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
   useNewUrlParser: true,
@@ -71,6 +72,6 @@ app.put("/api/workouts/:id", ({ body, params }, res) => {
   });
 });
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log("App running on port 3000!");
 });
