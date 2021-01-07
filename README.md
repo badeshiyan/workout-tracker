@@ -4,13 +4,15 @@
 
 In this unit, we have covered and implemented the use of MongoDB, a popular noSQL database. Unlike SQL, which is a table-based relational model, this database employs a document-oriented model. Also, in contrast to SQL, noSQL terms include database, collection, document, and field. In addition to MongoDB, we have also covered the use of Mongoose, a MongoDB object modeling tool designed to work in an asynchronous environment.
 
-With this new found expertise, we have been tasked to create fitness tracker. Although the front-end code was provided for this application, it was our responsibility to successfully build the back-end functionality. Upon completion of the app, the reader will find a fitness tracker that that was built with a Mongo database with a Mongoose schema and handle routes with Express.
+With this new found expertise, we have been tasked to create a fitness tracker. Although the front-end code was provided for this application, it was our responsibility to successfully build the back-end functionality. Upon completion of the app, the reader will find a fitness tracker that was built with a Mongo database with a Mongoose schema and handle routes with Express. With the app, the user is able to create and track daily workouts. The user can log multiple exercises in a workout on a specific date. The app allows the user to track the name, type, weight, sets, reps, and duration of exercise.
 
 Please find additional information regarding this project below. Thanks.
 
 ## Deployed Application Link
 
 Please find the deployed webpage link here: https://enigmatic-citadel-15539.herokuapp.com/
+
+## Video of Application User Flow
 
 ## Screenshots of Generated Application
 
@@ -21,11 +23,9 @@ Please find the deployed webpage link here: https://enigmatic-citadel-15539.hero
 
 1. MDN Web Docs - Mongoose: https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/mongoose
 
-2. Node.js: https://expressjs.com/
+2. MongoDB Atlas: https://cloud.mongodb.com/
 
-3. NPM - Handlebars: https://handlebarsjs.com/
-
-4. MySQL: https://www.mysqltutorial.org
+3. Robo 3t: https://robomongo.org/
 
 ## MIT License
 
