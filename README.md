@@ -14,6 +14,8 @@ Please find the deployed webpage link here: https://enigmatic-citadel-15539.hero
 
 ## Video of Application User Flow
 
+![Adeshiyan Fitness Tracker Gif](./public/assets/tracker.gif)
+
 ## Screenshots of Generated Application
 
 ![Adeshiyan Fitness Tracker Screenshot](./public/assets/tracker1.png)
