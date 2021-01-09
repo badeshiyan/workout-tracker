@@ -29,6 +29,8 @@ Please find the deployed webpage link here: https://enigmatic-citadel-15539.hero
 
 3. Robo 3t: https://robomongo.org/
 
+4. Heroku: https://dashboard.heroku.com/apps/enigmatic-citadel-15539
+
 ## MIT License
 
 Copyright (c) [2021] [Adebambo Adeshiyan]
